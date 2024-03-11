@@ -1,0 +1,90 @@
+.sc-footer-menu-item {
+  border-radius: 10px;
+  border: 1px dashed #595959;
+  display: flex;
+  color: #fff;
+  min-height: 160px;
+  height: 100%;
+  transition: background .1s;
+  padding: 25px 10px;
+  cursor: pointer;
+  font-weight: 700;
+  flex-direction: column;
+  position: relative;
+  min-width: 150px;
+  margin: 0 5px;
+
+  h4 {
+    font-size: 14px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      color: #4655d2;
+      line-height: 30px;
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .sc-delete-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: center;
+
+    &:hover {
+      .delete-icon {
+        fill: #fff;
+      }
+    }
+
+    .delete-icon {
+      width: 15px;
+      height: 15px;
+      font-size: 0;
+      fill: #999;
+      pointer-events: none;
+    }
+  }
+
+  .sc-click-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background 0.1s;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .edit-icon {
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    fill: #999;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: #333c
+  }
+}

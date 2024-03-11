@@ -1,0 +1,50 @@
+.sc-attachment-item {
+  position: relative;
+
+  + .sc-attachment-item {
+    margin-top: 10px;
+  }
+
+  .sc-attachment-name {
+    padding-right: 32px;
+  }
+
+  .sc-delete-button {
+    position: absolute;
+    cursor: pointer;
+    top: 23px;
+    right: 0;
+    background: 0 0;
+    outline: 0;
+    border: none;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon-trash {
+      fill: #999;
+      width: 14px;
+    }
+  }
+
+  .sc-attachment-label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+
+.sc-add-attachment {
+  color: #4655d2;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 14px;
+
+  &:hover {
+    color: darken(#4655d2, 10%);
+  }
+}

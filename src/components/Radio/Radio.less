@@ -1,0 +1,50 @@
+// Utility classes
+
+.sc-radio {
+  position: relative;
+  padding-left: 29px;
+  margin: 0;
+  user-select: none;
+  display: flex;
+
+  + .sc-radio {
+    margin-top: 10px;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .sc-radio-label {
+    cursor: pointer;
+    margin: 0;
+    line-height: 18px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border-radius: 10px;
+      border-width: 1px;
+      border-style: solid;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+    }
+  }
+}

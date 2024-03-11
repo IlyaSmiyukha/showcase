@@ -1,0 +1,108 @@
+.sc-add-hyperlinks,
+.sc-add-filters {
+  .btn-wrap {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    padding: 0 10px;
+  }
+
+  .sc-button-plus {
+    width: 30px;
+    padding: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 13px;
+      height: 13px;
+      fill: #fff;
+    }
+  }
+
+  .sc-add-hyperlinks-list {
+    max-height: 50vh;
+  }
+
+  .sc-param-container {
+    position: relative;
+
+    .sc-input {
+      padding-right: 30px;
+    }
+
+    + .sc-param-container {
+      margin-top: 15px;
+    }
+  }
+
+  .hseparator {
+    margin: 10px;
+  }
+
+  .filter-action-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sc-filter-delete {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    svg {
+      width: 12px;
+    }
+  }
+
+  .sc-filter-move {
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.sc-filter-move-up {
+        &:after {
+          transform: rotate(-90deg);
+        }
+    }
+
+    &.sc-filter-move-down {
+        &:after {
+          transform: rotate(90deg)
+        }
+    }
+
+    &:after {
+      user-select: none;
+      content: "";
+      width: 12px;
+      height: 12px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+}
+
+.sc-add-hyperlinks {
+  .sc-input-error {
+    margin: 10px;
+  }
+}

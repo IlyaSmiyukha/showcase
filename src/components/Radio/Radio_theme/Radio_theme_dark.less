@@ -1,0 +1,25 @@
+@color1      : #A6A6A6;
+@color2      : #9c9c9c;
+@color3      : #4655D2;
+
+.sc-radio {
+  color: @color1;
+
+  .icon {
+    fill: @color1;
+  }
+
+  .sc-radio-label {
+    &:before {
+      border-color: @color2;
+    }
+  }
+
+
+  input[type='radio']:checked {
+    + .sc-radio-label:after {
+       background-color: @color3;
+       border-color: @color3;
+    }
+  }
+}

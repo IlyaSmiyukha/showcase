@@ -1,0 +1,39 @@
+.items-list {
+  &-wrapper {
+    & .items-row {
+      color: #a6a6a6;
+      &:hover {
+        background-color: darken(#ffffff, 15%);
+      }
+
+      a {
+        color: #a6a6a6;
+      }
+    }
+
+    .link-icon path {
+      fill: #a6a6a6 !important
+    }
+
+    & .items-header, & .items-col-link {
+      color: #a6a6a6;
+    }
+    & .items-row, & .items-header {
+      .items-col {
+        &-small {
+          & svg {
+            fill: #a6a6a6 !important;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.loading-tile-row {
+  background-color: #DCDEE0;
+  &:before {
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 70%);
+  }
+}

@@ -1,0 +1,22 @@
+@fontColor:  #4d4d4d;
+@lightColor: lighten(@fontColor, 15%);
+
+.sc-dropdown {
+  &-title {
+    color: @fontColor;
+    &:hover {
+      color: @lightColor;
+    }
+  }
+
+   &.open {
+     .sc-dropdown-title {
+       color: @lightColor;
+     }
+   }
+   &-menu {
+    background-color: #fff;
+    color: #4d4d4d;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+}

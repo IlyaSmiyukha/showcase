@@ -1,0 +1,37 @@
+@baseBg: #fff;
+@borderColor: #ebebeb;
+@textItemBg: #ebebeb;
+@tileBg: #f5f5f5;
+
+.sc-skeleton {
+  background: @baseBg;
+  
+  .sc-skeleton-header {
+    border-color: @borderColor;
+  }
+
+  .sc-skeleton-heading {
+    .sc-skeleton-text-item {
+      border-color: @borderColor;
+    }
+  }
+
+  .sc-skeleton-right-panel {
+    border-left-color: @borderColor
+  }
+
+  .sc-skeleton-right-panel-header {
+    border-color: @borderColor;
+  }
+
+  .sc-skeleton-text-item {
+    background: @textItemBg;
+    &:before {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 70%);
+    }
+  }
+
+  .sc-skeleton-tile {
+    background: @tileBg;
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "rfc_version": "1.0", //required
+  "rfc_type": "showcase", //required
+  "blocks": [ //required
+      {
+        "id": "1", //required
+        "type": "showcase-header", //required
+        "logo_file": {
+            "file_type": "standalone", //required, copy of file type (converted into string)
+            "file_id": "bbbfd0aa310d4cbd88586c2d9a7c5d60", //required, public file id
+            "group_path": "touchcast-internal", //required
+            "title": "Touchcast logo", //required, can be overriden from file entity
+            "created": 1580117852 //required, copy of file created value
+        },
+        "video_background": {
+            "file_type": "standalone", //required, copy of file type (converted into string)
+            "file_id": "a69802a06ff8487db4f6cec469c7df53", //required, public file id
+            "group_path": "touchcast-internal", //required
+            "title": "Background video", //required, can be overriden from file entity
+            "created": 1580118099 //required, copy of file created value
+        },
+        "heading": "How our future will look like?", //required
+        "description": "Watch a series of videos and try to imagine how our future will look like. Will try to understand how will AI impact our lives and also how we can transform our cities.",
+        /*"button": {
+            "button_type": "callout",
+            "label": "Click me", //optional
+            "action": "", //optional, enum of actions, never javascript or calling custom code
+        },
+        "hyperlinks": [ //array of hyperlink data type
+            {
+              "title": "Contacts",
+              "url": "http://link.example.com/contacts"
+            }
+        ],
+        "hyperlinks_options": { //optional if not provided assume defaults / all false
+            "show_search": true, //default false
+        }*/
+      },
+      {
+        "id": "2", //required
+        "type": "showcase-category", //required
+        "title": "Ted Talks - Artificial Intelligence", //optional
+        "items": [{
+          "file_type": "video",
+          "file_id":"b3ce26983cb64cefb03386842e213060", 
+          "group_path": "touchcast-internal", 
+          "title": "Where AI is today and where its going?",
+          "created": 1580113954 
+        },
+        {
+          "file_type": "video",
+          "file_id":"5472755f88c649aba5af31673a686b1f", 
+          "group_path": "touchcast-internal", 
+          "title": "Understanding artificial intelligence and its future",
+          "created": 1580113922 
+        },
+        {
+          "file_type": "video",
+          "file_id":"b3368940af8e4da2abf3d9f362349dd6", 
+          "group_path": "touchcast-internal", 
+          "title": "The human pursuit of artificial intelligence",
+          "created": 1580113723 
+        },
+        {
+          "file_type": "video",
+          "file_id":"c935bb92620a4f618bebfba97b0e3946", 
+          "group_path": "touchcast-internal", 
+          "title": "How AI can save our humanity?",
+          "created": 1580113547
+        },
+        {
+          "file_type": "video",
+          "file_id":"095d5eaf14914e0688384737fe6547e7", 
+          "group_path": "touchcast-internal", 
+          "title": "What happens when our computers get smarter than we are?",
+          "created": 1580113502
+        },
+        {
+          "file_type": "video",
+          "file_id":"0b95453ab07942ed8a365e29209ca0ea", 
+          "group_path": "touchcast-internal", 
+          "title": "Can we build AI without losing control over it?",
+          "created": 1580113447
+        },
+        {
+          "file_type": "video",
+          "file_id":"7b046d7ae85845c496287a1f370c915b", 
+          "group_path": "touchcast-internal", 
+          "title": "AI and the future of work",
+          "created": 1580112412
+        }
+      ]
+      },
+      {
+        "id": "3", //required
+        "type": "showcase-category", //required
+        "title": "The future of our cities", //optional
+        "items": [{
+          "file_type": "video",
+          "file_id":"849b6274874d45c68a90c2a6e2b3cab0", 
+          "group_path": "touchcast-internal", 
+          "title": "Why millennials should move to smaller cities and towns?",
+          "created": 1580113996
+        },
+        {
+          "file_type": "video",
+          "file_id":"4caf2ec635e24b929b75ec5dd0f7ce0d", 
+          "group_path": "touchcast-internal", 
+          "title": "How we can design timeless cities for our collective future?",
+          "created": 1580113593
+        },
+        {
+          "file_type": "video",
+          "file_id":"9b71c9f8b09748fabb15df5361624786", 
+          "group_path": "touchcast-internal", 
+          "title": "The biggest risks facing cities - and some solutions",
+          "created": 1580113479
+        },
+        {
+          "file_type": "video",
+          "file_id":"4645f8d1b375456a80560a16625d12b3", 
+          "group_path": "touchcast-internal", 
+          "title": "The walkable city",
+          "created": 1580113465
+        },
+        {
+          "file_type": "video",
+          "file_id":"af2f3373cf7644b1b8a2e1c601d9d5ce", 
+          "group_path": "touchcast-internal", 
+          "title": "7 principles for building better cities",
+          "created": 1580113431
+        }
+      ]
+      },
+      {
+        "id": "4", //required
+        "type": "showcase-footer", //required
+        "logo_file": {
+            "file_type": "standalone", //required, copy of file type (converted into string)
+            "file_id": "bbbfd0aa310d4cbd88586c2d9a7c5d60", //required, public file id
+            "group_path": "touchcast-internal", //required
+            "title": "Touchcast logo", //required, can be overriden from file entity
+            "created": 1580117852 //required, copy of file created value
+        },
+        "text": "©2020 Touchcast, LLC. All rights reserved" //required if no logo_file provided
+      }
+  ]
+}

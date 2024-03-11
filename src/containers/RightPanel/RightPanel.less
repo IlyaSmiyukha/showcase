@@ -1,0 +1,133 @@
+.wrapper {
+  display: flex;
+}
+
+.file-tile-wrapper {
+  width: 100%;
+  animation: none;
+
+  +.file-tile-wrapper {
+    margin-top: 5px;
+  }
+
+  & > div {
+    z-index: 2;
+    transition: none;
+    transition-duration: 0s;
+
+    &.file-tile-clone {
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    &.file-tile-clone + div {
+      height: 0;
+    }
+  }
+
+  &.file-tile-draggable {
+    user-select: none;
+    margin: 0 14px 0 0;
+  }
+}
+
+.category-arrow {
+  width: 70px;
+  height: 70px;
+  opacity: 0.5;
+  background-image: linear-gradient(to left, #000000 112%, #000000);
+}
+
+.showcase-right-panel {
+  width: 250px;
+  min-width: 250px;
+  border-left: solid 1px;
+
+  .sc-tile-wrapper {
+    padding: 0;
+
+    .sc-file-tile {
+      border: 0;
+    }
+  }
+
+  .showcase-add-popup-search {
+    padding: 0;
+    margin-bottom: 20px;
+
+    svg {
+      top: 6px;
+      left: 7px;
+      z-index: 1
+    }
+
+    .sc-clear-search {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  @media(min-width: 950px) {
+    display: block;
+  }
+
+  &-header {
+    padding: 0 20px;
+    height: 50px;
+    border-bottom: solid 1px;
+    position: relative;
+  }
+
+  &-content {
+    padding: 20px;
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+
+    .custom-scrollbar {
+      height: calc(100% - 53px) !important;
+    }
+
+    & .custom-scrollbar-scroll-box {
+      overflow-x: hidden!important;
+    }
+
+    .fileTile {
+      cursor: pointer;
+
+      .tileImgWrapper {
+        height: 121px;
+      }
+    }
+  }
+
+  .file-tile-wrapper {
+    +.FabricanimationTriangleLoaderWrapper {
+      left: 0;
+      position: relative;
+      top: 0;
+      transform: translate(0);
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+    }
+
+    + .file-tile-wrapper {
+      margin-top: 15px;
+    }
+  }
+
+  .FabricanimationTriangleLoaderWrapper {
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%);
+  }
+
+  .sc-no-files {
+    max-width: 100%;
+  }
+
+  .sc-no-search-results {
+    padding: 0;
+    margin-left: -10px;
+  }
+}

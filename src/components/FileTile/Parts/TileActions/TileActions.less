@@ -1,0 +1,66 @@
+.sc-tile-actions-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+
+  .sc-actions-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .sc-settings-button,
+  .sc-tile-delete-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      right: 0;
+      top: 0;
+      width: 17px;
+      height: 17px;
+      fill: #4D4D4D;
+    }
+
+    &:hover {
+      svg {
+        fill: #4655d2;
+      }
+    }
+  }
+
+  .sc-tile-delete-icon {
+    margin-left: 10px;
+  }
+
+  .sc-actions-text {
+    text-transform: uppercase;
+    color: #4655d2;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    max-width: calc(100% - 50px);
+
+    span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &:after {
+      content: '';
+      width: 29px;
+      height: 18px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%2300A1E0' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' style=' stroke: %234655d2;%0A'%3E%3Cpath d='M5.25 0L0 5.25 5.25 10.5M0 5.25L15 5.25' transform='matrix(-1 0 0 1 16.5 3.75)'%3E%3C/path%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+  }
+}

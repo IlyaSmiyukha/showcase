@@ -1,0 +1,62 @@
+.showcase-header .tc-button--flat {
+  &.disabled,
+  &[disabled] {
+    background-color: transparent;
+  }
+
+  &.save-button-flex {
+    display: flex;
+  }
+}
+
+.sc-saving {
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.check-icon {
+  display: block;
+  width: 24px;
+  transition: all 1s;
+
+  path {
+    opacity: 0;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    fill: none;
+    transition: all 1s;
+    stroke: #4655D2;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  polyline {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    transition: stroke-dashoffset 1s 0.5s ease-out;
+    fill: none;
+    stroke: #4655D2;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+
+  &.animation-entered,
+  &.animation-entering {
+    path,
+    polyline {
+      opacity: 1;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  &.animation-entered,
+  &.animation-exiting {
+    display: none;
+  }
+}

@@ -1,0 +1,66 @@
+.sc-shortcuts-wrapper {
+  margin: 0 20px 60px;
+  position: relative;
+  border: 1px dashed #595959;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: stretch;
+
+  .sc-shortcut-control {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+  .sc-shortcuts-content {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sc-shortcuts-scroll-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    grid-auto-columns: 100%;
+    overflow: scroll hidden;
+    grid-auto-columns: 100%;
+    scrollbar-width: none;
+    scrollbar-height: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    margin: 0 -5px;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0;
+    }
+
+    @media (min-width: 700px) {
+      grid-auto-columns: 50%;
+    }
+
+    @media (min-width: 900px) {
+      grid-auto-columns: 33.33%;
+    }
+
+    @media (min-width: 1128px) {
+      grid-auto-columns: 25% ;
+    }
+
+    @media (min-width: 1800px) {
+      grid-auto-columns: 16.66%;
+    }
+
+    @media (min-width: 2400px) {
+      grid-auto-columns: 12.5%;
+    }
+  }
+
+  .sc-add-item {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    min-width: 0;
+  }
+
+}

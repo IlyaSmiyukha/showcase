@@ -1,0 +1,91 @@
+.showcase-header {
+  padding-left: 20px;
+  height: 50px;
+  display: flex;
+  border-bottom: solid 1px;
+  display: flex;
+  align-items: center;
+
+  .title {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 29px;
+    white-space: nowrap;
+  }
+
+  & .showcase-count {
+    min-width: 23px;
+    height: 24px;
+    width: auto;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+  }
+
+  & .showcase-title-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .sc-dropdown {
+    .dots {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border-left: solid 1px;
+
+      svg {
+        width: 10px;
+        height: 20px;
+      }
+    }
+  }
+
+  .rfc-publish {
+    margin-right: 10px;
+  }
+
+  .sc-add-user {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-left: solid 1px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .sc-breadcrumb {
+    display: flex;
+    span {
+      opacity: .7;
+      max-width: calc(100% - 160px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

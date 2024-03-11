@@ -1,0 +1,15 @@
+
+.svg-image(@fill: transparent, @stroke: transparent, @width: 17px, @height: 17px, @left : auto, @top : 0, @right: auto, @position: absolute) {
+  position: @position;
+  width: @width;
+  height: @height;
+  left: @left;
+  top: @top;
+  right: @right;
+  z-index: 0;
+  pointer-events: none;
+}
+
+svg.close_modal_btn {
+  .svg-image(@fill: white, @width: 12px, @height: 12px, @right: 0px, @top: 3px);
+}

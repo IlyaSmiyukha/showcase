@@ -1,0 +1,15 @@
+@color: #fff;
+@background: #4655d2;
+@backgroundHover: #3645D1;
+
+.sc-upload-wrap {
+  input[type=file] {
+    +label {
+      color: @color;
+      background: @background;
+      &:hover {
+        background: @backgroundHover;
+      }
+    }
+  }
+}

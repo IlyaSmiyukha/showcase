@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="17px" viewBox="0 0 11 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>C1D28F62-6C31-4C7B-97F6-E53AF9D3DA09</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M10.8611911,11 C11.0462696,11.2 11.0462696,11.51 10.8611911,11.71 L5.85432809,16.85 C5.75691831,16.95 5.63028559,17 5.50365287,17 C5.37702015,17 5.25038743,16.95 5.15297764,16.86 L0.146114678,11.71 C-0.0389639141,11.51 -0.0389639141,11.19 0.146114678,11 C0.33119327,10.81 0.642904583,10.81 0.837724153,11 L5.50365287,15.8 L10.1695816,11 C10.3644012,10.81 10.6761125,10.81 10.8611911,11 Z M0.146114678,6 C-0.0487048926,5.8 -0.0487048926,5.49 0.146114678,5.29 L5.15297764,0.15 C5.25038743,0.05 5.37702015,-1.77635684e-15 5.50365287,-1.77635684e-15 C5.63028559,-1.77635684e-15 5.75691831,0.05 5.85432809,0.15 L10.8611911,5.29 C11.0462696,5.49 11.0462696,5.81 10.8611911,6 C10.6663715,6.19 10.3546602,6.19 10.1695816,6 L5.50365287,1.2 L0.837724153,6 C0.642904583,6.19 0.33119327,6.19 0.146114678,6 Z" id="path-1"></path>
+    </defs>
+    <g id="tcf_channels" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tcf_dark_showcase_add-bg-video" transform="translate(-1162.000000, -67.000000)">
+            <g id="dynamic-panel" transform="translate(1069.000000, 50.000000)">
+                <g id="pannel-header" transform="translate(1.000000, 14.000000)">
+                    <g id="my-files_sort" transform="translate(19.000000, 0.000000)">
+                        <g id="icons/arrows/dropdown_filter_grey" transform="translate(72.000000, 3.000000)">
+                            <g id="icon_dropdown_filter" transform="translate(1.000000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use fill="#4D4D4D" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+@bgColor: #595959;
+@hoverBgcolor: #4D4D4D;
+@color: #fff;
+@bgColorDisabled: #CCCCCC;
+@textColorDisabled: #fff;
+
+.sc-preview {
+    color: @color;
+    background: @bgColor;
+
+    &-disabled {
+      background: @bgColorDisabled;
+      color: @textColorDisabled;
+
+      &:hover {
+        background: @bgColorDisabled;
+      }
+    }
+
+    &:hover {
+      background: @hoverBgcolor;
+    }
+}

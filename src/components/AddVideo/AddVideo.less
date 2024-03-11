@@ -1,0 +1,38 @@
+@color: #808080;
+@bgColor: #333333;
+@borderColor: #4d4d4d;
+@selectedColor: #fff;
+
+@fixedPadding: 65%;
+
+
+.showcase-add-video {
+  width: calc(100% - 10px);
+  height: 100%;
+  border-radius: 10px;
+  border: dashed 1px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .1s;
+  border-color: @borderColor;
+  background-color: @bgColor;
+  color: @color;
+  margin: 0 5px;
+  position: relative;
+  
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover, &.selected {
+    color: @selectedColor;
+    background-color: darken(@bgColor, 5%);
+  }
+}

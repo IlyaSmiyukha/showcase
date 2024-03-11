@@ -1,0 +1,44 @@
+.sc-back-button {
+  cursor: pointer;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  transition: color 0.1s;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 10px;
+    height: 20px;
+    margin-right: 5px;
+    transform: rotate(180deg);
+    transition: fill 0.1s;
+  }
+}
+
+.sc-add-popup-content {
+  .sc-back-button {
+    padding: 30px 20px 20px;
+    margin: 0;
+  }
+}
+
+
+@clrBase: #808080;
+@clrHover: #fff;
+
+.sc-back-button {
+  color: @clrBase;
+
+  svg {
+    fill: @clrBase;
+  }
+
+  &:hover {
+    color: @clrHover;
+    svg {
+      fill: @clrHover;
+    }
+  }
+}

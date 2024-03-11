@@ -1,0 +1,38 @@
+@clrBase: #fff;
+
+.sc-file-tile {
+  color: @clrBase;
+
+  &.sc-folder-tile {
+    &:before {
+      border-bottom-color: #333;
+      color: #333 !important
+    }
+    &:after {
+      border-bottom-color: #4655d2 !important;
+      color: #4655d2 !important;
+    }
+  }
+
+  .sc-tile-img-wrapper {
+    background-color: #333333;
+
+    .sc-timecode {
+      background-color: rgba(0, 0, 0, 0.7);
+
+      span {
+        color: @clrBase;
+      }
+    }
+  }
+
+}
+
+.showcase-right-panel, .sc-add-popup-files {
+  .sc-tile-wrapper {
+    .sc-title-info-wrapper {
+      background-color: #333333;
+      color: @clrBase;
+    }
+  }
+}

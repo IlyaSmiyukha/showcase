@@ -1,0 +1,56 @@
+@color: #fff;
+
+.sc-add-popup {
+  background: #1a1a1a;
+  color: #606060;
+
+  &-menu {
+    background: #262626;
+
+    &-heading {
+      background: #333;
+      color: #a6a6a6;
+
+      svg {
+        fill: #a6a6a6;
+      }
+    }
+
+    &-item {
+      color: #A6A6A6;
+
+      &:hover {
+        color: @color;
+      }
+
+      &.selected {
+        color: @color;
+        background: #4655d2;
+      }
+    }
+  }
+
+  .sc-buttons-container {
+    background: #333;
+  }
+
+  .stock-tab  {
+    color: #a6a6a6;
+
+    .title {
+      color: @color;
+    }
+  }
+}
+
+.showcase-add-popup-search {
+  svg {
+    fill: #a6a6a6
+  }
+
+  .sc-clear-search:hover {
+      svg {
+        fill: #fff;
+      }
+  }
+}

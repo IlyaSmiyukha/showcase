@@ -1,0 +1,32 @@
+.sc-arrow-icon {
+  width: 60px;
+  height: 60px !important;
+  opacity: 0.9;
+  position: absolute !important;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  background: #4655d2;
+  transform: translate(0, -50%);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.flipped {
+    left: 0;
+    transform: rotate(180deg) translate(0, 50%);
+  }
+
+  & svg {
+    width: 12px;
+    height: 30px;
+    object-fit: contain;
+    fill: #dadada;
+  }
+}

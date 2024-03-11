@@ -1,0 +1,120 @@
+.items-list {
+
+  &-scroll-container, &-wrapper {
+    height: calc(100% - 50px);
+  }
+  &-wrapper {
+      width: 100%;
+    .items-list-loader {
+      height: 50px;
+      position: relative;
+    }
+
+    .FabricanimationTriangleLoaderWrapper {
+      top: 0;
+      height: 40px;
+    }
+
+    & .items-row {
+      font-family: 'Gotham';
+      font-size: 14px;
+      font-weight: bold;
+
+      &:hover {
+        border-radius: 10px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+
+        svg {
+          margin-left: 5px;
+        }
+      }
+    }
+    & .items-header, & .items-col-link {
+      font-size: 14px;
+      font-family: 'Gotham';
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    & .items-col-title {
+      font-family: 'Averta';
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    & .items-row, & .items-header {
+      height: 50px;
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .items-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        min-width: 60px;
+
+        &:first-child {
+          padding-right: 20px;
+        }
+
+        &-wide {
+          width: 40%;
+
+          & > div {
+            line-height: 1;
+          }
+        }
+        &-normal {
+          width: 25%;
+          justify-content: center;
+          font-weight: normal;
+          &.status {
+            text-transform: capitalize;
+          }
+        }
+        &-small {
+          justify-content: center;
+          align-items: flex-end;
+          width: 5%;
+          & .link-icon {
+            width: 17px;
+            height: 17px;
+
+            &.sc-link-icon-disabled path{
+              fill: #a6a6a6;
+            }
+          }
+          & a > svg {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+
+@keyframes blick {
+  from {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}

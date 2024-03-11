@@ -1,0 +1,211 @@
+
+@color1      : #FFFFFF;
+@color2      : #404040;
+@color3      : #4D4D4D;
+@color4      : #595959;
+@color5      : #9c9c9c;
+@color6      : #A6A6A6;
+@color7      : #D9D9D9;
+@color8      : #4655D2;
+@color9      : #3645D1;
+@color10     : #2434B9;
+@color11     : #47509C;
+
+
+.tc-button--normal {
+  background-color: @color8;
+  color: @color1;
+
+  .icon {
+    fill: @color1;
+  }
+
+  &:hover {
+    background-color: @color9;
+    color: @color1;
+
+    .icon {
+      fill: @color1;
+    }
+
+    &:active {
+      background-color: @color10;
+      color: @color1;
+
+      .icon {
+        fill: @color1;
+      }
+    }
+  }
+
+  &:active {
+    background-color: @color10;
+    color: @color1;
+
+    .icon {
+      fill: @color1;
+    }
+  }
+
+  &.disabled, &[disabled] {
+    background-color: @color11;
+    color: @color5;
+
+    .icon {
+      fill: @color5;
+    }
+
+    &:hover, &:active {
+      background-color: @color11;
+      color: @color5;
+
+      .icon {
+        fill: @color5;
+      }
+    }
+  }
+}
+
+.tc-button--light {
+  background-color: @color4;
+  color: @color6;
+
+  .icon {
+    fill: @color6;
+  }
+
+  &:hover {
+    background-color: darken(@color4, 10%);
+    color: @color7;
+
+    .icon {
+      fill: @color7;
+    }
+
+    &:active {
+      //background-color: @color3;
+      color: @color7;
+
+      .icon {
+        fill: @color7;
+      }
+    }
+  }
+
+  &:active {
+    background-color: @color3;
+    color: @color7;
+
+    .icon {
+      fill: @color7;
+    }
+  }
+
+  &.disabled, &[disabled] {
+    background-color: @color2;
+    color: @color4;
+    border-color: transparent;
+
+    .icon {
+      fill: @color5;
+    }
+
+    &:hover, &:active {
+      border-color: transparent;
+      background-color: @color2;
+      color: @color4;
+
+      .icon {
+        fill: @color5;
+      }
+    }
+  }
+}
+
+.tc-button--flat {
+  background-color: transparent;
+  color: @color5;
+
+  &:hover {
+    background-color: transparent;
+    color: @color7;
+  }
+
+  &:active:not(:disabled):not([disabled]) {
+    background-color: transparent;
+    color: @color6;
+  }
+
+  &.disabled, &[disabled] {
+    background-color: transparent;
+    color: #595959;
+  }
+}
+
+.tc-link-dark {
+  color: @color8;
+  text-decoration: underline;
+
+  &:hover {
+    color: darken(@color8, 10%);
+    text-decoration: underline;
+  }
+}
+
+
+.tc-button-icon--light {
+  background-color: transparent;
+
+  .icon {
+    fill: @color2;
+  }
+
+  &:hover, &:active {
+    .icon {
+      fill: @color7;
+    }
+  }
+}
+
+.tc-button-header--flat {
+  color: @color5;
+  background-color: transparent;
+
+  .icon {
+    fill: @color5;
+  }
+
+  &:hover, &:active {
+    color: @color7;
+
+    .icon {
+      fill: @color7;
+    }
+  }
+
+  &--left-bordered {
+    border-left-color: @color2 !important;
+  }
+}
+
+.tc-button-header--normal {
+  background-color: @color8;
+  color: @color1;
+
+  .icon {
+    fill: @color1;
+  }
+
+  &:hover, &:active {
+    background-color: @color9;
+    color: @color1;
+
+    .icon {
+      fill: @color1;
+    }
+  }
+}
+
+.btn-without-bg {
+  color: @color8;
+}

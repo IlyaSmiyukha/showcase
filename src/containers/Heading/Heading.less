@@ -1,0 +1,121 @@
+@bgColor: #333;
+@borderColor: #595959;
+@color: #fff;
+@fill: #999;
+@colorHover: #4655d2;
+
+.sc-heading-wrapper {
+  padding: 0 20px;
+  position: relative;
+  border-radius: 10px;
+  background-position: calc(100% - 7px) 7px;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  color: @color;
+
+ .sc-heading-background {
+   span {
+     &:hover {
+       color: @colorHover;
+       text-decoration-color: @colorHover;
+     }
+   }
+ }
+
+  .edit-icon {
+    & > svg {
+      fill: @fill;
+    }
+  }
+
+  .sc-heading-background {
+    padding: 20px 0;
+    text-align: right;
+    font-size: 14px;
+
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all .1s;
+      position: relative;
+    }
+
+    .edit-icon {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin-left: 10px;
+      vertical-align: middle;
+      margin-top: -3px;
+    }
+  }
+
+  > img {
+    pointer-events: none;
+  }
+
+  & > .sc-heading-items-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    p {
+      min-height: 23px;
+    }
+
+    > * {
+      pointer-events: auto;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    .showcase-edit-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .sc-video-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+  }
+
+  .edit-icon {
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    fill: #999;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .sc-loader {
+    z-index: 0;
+    transform: scale(.5);
+  }
+
+  .sc-heading-content {
+      max-width: 470px;
+
+      @media(min-width: 768px) {
+        max-width: 630px;
+      }
+  }
+}

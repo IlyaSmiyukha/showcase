@@ -1,0 +1,50 @@
+@color1: #FFFFFF;
+@color2: #9c9c9c;
+@color3: #A6A6A6;
+@color4: #4655D2;
+
+body .sc-checkbox {
+  .sc-checkbox-label {
+    color: @color3;
+
+    .icon {
+      fill: @color3;
+    }
+  }
+
+  .sc-view-checkbox {
+    border-color: @color2;
+  }
+
+  input[type='checkbox']:checked ~ .sc-view-checkbox:after {
+    background-color: @color4;
+    border-color: @color4;
+  }
+
+  .privacy-checkbox-label {
+    .sc-view-label {
+      color: @color3;
+    }
+
+    input[type=checkbox] {
+      & ~.sc-view-checkbox:after {
+        border-color: @color2;
+      }
+
+      &:checked~.sc-view-checkbox:after {
+        background-color: @color4;
+      }
+    }
+  }
+
+  .Select-value-icon,
+  .Select-value-label {
+    .text {
+      color: @color1;
+    }
+
+    .icon {
+      fill: @color1;
+    }
+  }
+}

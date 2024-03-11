@@ -1,0 +1,76 @@
+.sc-dropdown {
+  position: relative;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Gotham';
+  display: inline-block;
+
+
+  &-title {
+    cursor: pointer;
+    transition: color .1s;
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    line-height: 50px;
+
+    &:after,
+    &:not(&.sc-category-dropdown):after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 15px;
+      width: 11px;
+      height: 17px;
+      background-repeat: no-repeat;
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMXB4IiBoZWlnaHQ9IjE3cHgiIHZpZXdCb3g9IjAgMCAxMSAxNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5DMUQyOEY2Mi02QzMxLTRDN0ItOTdGNi1FNTNBRjlEM0RBMDk8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggc2tldGNodG9vbC48L2Rlc2M+ICAgIDxkZWZzPiAgICAgICAgPHBhdGggZD0iTTEwLjg2MTE5MTEsMTEgQzExLjA0NjI2OTYsMTEuMiAxMS4wNDYyNjk2LDExLjUxIDEwLjg2MTE5MTEsMTEuNzEgTDUuODU0MzI4MDksMTYuODUgQzUuNzU2OTE4MzEsMTYuOTUgNS42MzAyODU1OSwxNyA1LjUwMzY1Mjg3LDE3IEM1LjM3NzAyMDE1LDE3IDUuMjUwMzg3NDMsMTYuOTUgNS4xNTI5Nzc2NCwxNi44NiBMMC4xNDYxMTQ2NzgsMTEuNzEgQy0wLjAzODk2MzkxNDEsMTEuNTEgLTAuMDM4OTYzOTE0MSwxMS4xOSAwLjE0NjExNDY3OCwxMSBDMC4zMzExOTMyNywxMC44MSAwLjY0MjkwNDU4MywxMC44MSAwLjgzNzcyNDE1MywxMSBMNS41MDM2NTI4NywxNS44IEwxMC4xNjk1ODE2LDExIEMxMC4zNjQ0MDEyLDEwLjgxIDEwLjY3NjExMjUsMTAuODEgMTAuODYxMTkxMSwxMSBaIE0wLjE0NjExNDY3OCw2IEMtMC4wNDg3MDQ4OTI2LDUuOCAtMC4wNDg3MDQ4OTI2LDUuNDkgMC4xNDYxMTQ2NzgsNS4yOSBMNS4xNTI5Nzc2NCwwLjE1IEM1LjI1MDM4NzQzLDAuMDUgNS4zNzcwMjAxNSwtMS43NzYzNTY4NGUtMTUgNS41MDM2NTI4NywtMS43NzYzNTY4NGUtMTUgQzUuNjMwMjg1NTksLTEuNzc2MzU2ODRlLTE1IDUuNzU2OTE4MzEsMC4wNSA1Ljg1NDMyODA5LDAuMTUgTDEwLjg2MTE5MTEsNS4yOSBDMTEuMDQ2MjY5Niw1LjQ5IDExLjA0NjI2OTYsNS44MSAxMC44NjExOTExLDYgQzEwLjY2NjM3MTUsNi4xOSAxMC4zNTQ2NjAyLDYuMTkgMTAuMTY5NTgxNiw2IEw1LjUwMzY1Mjg3LDEuMiBMMC44Mzc3MjQxNTMsNiBDMC42NDI5MDQ1ODMsNi4xOSAwLjMzMTE5MzI3LDYuMTkgMC4xNDYxMTQ2NzgsNiBaIiBpZD0icGF0aC0xIj48L3BhdGg+ICAgIDwvZGVmcz4gICAgPGcgaWQ9InRjZl9jaGFubmVscyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0idGNmX2Rhcmtfc2hvd2Nhc2VfYWRkLWJnLXZpZGVvIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE2Mi4wMDAwMDAsIC02Ny4wMDAwMDApIj4gICAgICAgICAgICA8ZyBpZD0iZHluYW1pYy1wYW5lbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTA2OS4wMDAwMDAsIDUwLjAwMDAwMCkiPiAgICAgICAgICAgICAgICA8ZyBpZD0icGFubmVsLWhlYWRlciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4wMDAwMDAsIDE0LjAwMDAwMCkiPiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Im15LWZpbGVzX3NvcnQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5LjAwMDAwMCwgMC4wMDAwMDApIj4gICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iaWNvbnMvYXJyb3dzL2Ryb3Bkb3duX2ZpbHRlcl9ncmV5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3Mi4wMDAwMDAsIDMuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJpY29uX2Ryb3Bkb3duX2ZpbHRlciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS4wMDAwMDAsIDAuMDAwMDAwKSI+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBmaWxsPSJ3aGl0ZSI+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvbWFzaz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgZmlsbD0iIzRENEQ0RCIgZmlsbC1ydWxlPSJub256ZXJvIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==);
+    }
+
+    &.dots {
+      &:after {
+        display: none;
+      }
+    }
+
+    &.right {
+      padding: inherit;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &.sc-category-dropdown {
+      line-height: 1;
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &-menu {
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+    font-family: 'Averta';
+    right: 20%;
+    top: calc(100% + 5px);
+    min-width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+
+    span {
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+      display: block;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: #D9D9D9;
+      }
+    }
+  }
+}

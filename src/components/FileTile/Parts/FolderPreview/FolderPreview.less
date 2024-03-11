@@ -1,0 +1,52 @@
+.sc-folder-preview-wrap {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  margin: 5px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  svg {
+    width: 30px;
+    height: 20px;
+    fill: #FFF;
+  }
+
+  .sc-folder-preview-left {
+    flex: 2;
+    min-height: 100%;
+    background: #262626;
+  }
+
+  .sc-folder-preview-right {
+    flex-direction: column;
+    flex: 1;
+    margin-left: 4px;
+
+    .sc-folder-preview-right-bottom {
+      margin-top: 4px;
+    }
+
+    > div {
+      flex: 1;
+      font-size: 18px;
+      font-weight: 600;
+      background: #262626;
+    }
+  }
+}

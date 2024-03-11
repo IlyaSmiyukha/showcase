@@ -1,0 +1,38 @@
+@fontColor: #808080;
+@borderColor: #383838;
+
+.showcase-right-panel {
+  color: @fontColor;
+  border-left-color: @borderColor;
+
+  &-header {
+    border-bottom-color: @borderColor;
+  }
+}
+
+.sc-dropdown {
+  &-title {
+    @fontColor: #808080;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@clrBase: #808080;
+@clrHover: #fff;
+
+.sc-back-button {
+  color: @clrBase;
+
+  svg path {
+    fill: @clrBase;
+  }
+
+  &:hover {
+    color: @clrHover;
+    svg path{
+      fill: @clrHover;
+    }
+  }
+}

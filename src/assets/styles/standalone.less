@@ -1,0 +1,100 @@
+// Clear style
+@import (css) "~react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+@import (css) "../fonts/sc-icon/font.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  height: 100%;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.showcase-wrapper {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 62px;
+  }
+
+  h2 {
+     font-size: 56px;
+     line-height: 64px;
+  }
+
+  h3 {
+     font-size: 48px;
+     line-height: 56px;
+  }
+
+  h4 {
+     font-size: 40px;
+     line-height: 48px;
+  }
+
+  h5 {
+     font-size: 32px;
+     line-height: 40px;
+  }
+
+  h6 {
+     font-size: 24px;
+     line-height: 32px;
+  }
+}

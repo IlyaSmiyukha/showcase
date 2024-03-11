@@ -1,0 +1,62 @@
+// Utility classes
+
+.sc-checkbox {
+  display: inline-block;
+  margin: 4px 0;
+  .sc-checkbox-label {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+
+    input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 1px;
+      height: 1px;
+      visibility: hidden;
+    }
+
+    .sc-view-checkbox {
+      position: absolute;
+      top: 4px;
+      right: auto;
+      bottom: auto;
+      left: 1px;
+      display: block;
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      border-width: 1px;
+      border-style: solid;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: auto;
+        bottom: auto;
+        left: 3px;
+        display: block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 1px;
+      }
+
+    }
+
+    .sc-view-label {
+      display: block;
+      padding-left: 29px;
+      line-height: 22px;
+    }
+
+    .light-description {
+      font-weight: normal;
+    }
+  }
+}

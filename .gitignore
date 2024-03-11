@@ -1,0 +1,5 @@
+node_modules
+dist
+src/containers/.DS_Store
+.DS_Store
+coverage 

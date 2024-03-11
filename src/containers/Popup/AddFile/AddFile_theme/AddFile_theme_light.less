@@ -1,0 +1,54 @@
+@bgColor: #ffffff;
+@itemColor: #606060;
+
+.sc-add-popup {
+  background-color: @bgColor;
+
+  &-menu {
+    background: @bgColor;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
+    &-heading {
+      background-color: #f5f5f5;
+      //color: #a6a6a6;
+
+      svg {
+        fill: #4D4D4D;
+      }
+    }
+
+    &-item {
+      color: @itemColor;
+      border-bottom-color: transparent;
+
+      &:hover {
+        color: lighten( @itemColor, 15%);
+      }
+
+      &.selected {
+        color: #6166eb;
+        border-bottom-color: #4655d2;
+      }
+    }
+  }
+
+  .sc-buttons-container {
+    background: @bgColor;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .stock-tab  {
+    color: #333;
+  }
+}
+
+.showcase-add-popup-search {
+  svg path {
+    fill: #a6a6a6
+  }
+
+  .sc-clear-search:hover {
+      svg path {
+        fill: #333;
+      }
+  }
+}

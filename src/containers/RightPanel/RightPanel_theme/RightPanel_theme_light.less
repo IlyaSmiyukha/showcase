@@ -1,0 +1,39 @@
+@fontColor: #808080;
+@borderColor: #ebebeb;
+@hoverColor: #fff;
+@clrHover: #fff;
+
+.showcase-right-panel {
+  color: @fontColor;
+  border-left-color: @borderColor;
+
+  &-header {
+    border-bottom-color: @borderColor;
+  }
+}
+
+.sc-dropdown {
+  &-title {
+    color: @fontColor;
+    &:hover {
+      color: lighten(#808080, 15%);
+    }
+  }
+}
+
+
+
+.sc-back-button {
+  color: @fontColor;
+
+  svg path {
+    fill: @fontColor;
+  }
+
+  &:hover {
+    color:  lighten(@fontColor, 15%);;
+    svg path {
+      fill: lighten(@fontColor, 15%);;
+    }
+  }
+}

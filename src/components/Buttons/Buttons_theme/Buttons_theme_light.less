@@ -1,0 +1,191 @@
+@color1      : #FFFFFF;
+@color2      : #4D4D4D;
+@color3      : #CCCCCC;
+@color4      : #999999;
+@color5      : #EFF1F3;
+@color6      : #4655D2;
+@color7:     darken(@color6, 10%);
+@color8      : #EBEBEB;
+@color9      : #1A1A1A;
+@color10     : darken(@color6, 15%);
+@color11     : #3b3b3b;
+@color12     : #f15d50;
+
+
+
+.tc-button--normal {
+  background-color: @color6;
+  color: @color1;
+  .icon {
+    fill: @color1;
+  }
+  &:hover {
+    background-color: @color7;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+    &:active {
+      background-color: @color10;
+      color: @color1;
+      .icon {
+        fill: @color1;
+      }
+    }
+  }
+  &:active {
+    background-color: @color10;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+  }
+  &.disabled, &[disabled] {
+    background-color: @color4;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+    &:hover, &:active {
+      background-color: @color4;
+      color: @color1;
+      .icon {
+        fill: @color1;
+      }
+    }
+  }
+}
+
+.tc-button--light {
+  background-color: @color2;
+  color: @color1;
+  .icon {
+    fill: @color1;
+  }
+  &:hover {
+    color: @color1;
+    background-color: @color11;
+    .icon {
+      fill: @color1;
+    }
+    &:active {
+      background-color: @color9;
+      color: @color1;
+    }
+  }
+  &:active {
+    background-color: @color9;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+  }
+  &.disabled, &[disabled] {
+    border-color: @color4;
+    background-color: @color4;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+    &:hover, &:active {
+      border-color: @color4;
+      background-color: @color4;
+      color: @color1;
+      .icon {
+        fill: @color1;
+      }
+    }
+  }
+}
+
+.tc-button--flat {
+  background-color: transparent;
+  color: @color4;
+  .icon {
+    fill: @color2;
+  }
+  &:hover {
+    background-color: transparent;
+    color: @color6;
+  }
+  &:active {
+    background-color: transparent;
+    color: @color6;
+  }
+  &.disabled, &[disabled] {
+    background-color: transparent;
+    color: @color3;
+  }
+}
+
+.tc-link-dark {
+  color: @color6;
+}
+
+.tc-button-icon--light {
+  background-color: transparent;
+  .icon {
+    fill: @color3;
+  }
+  &:hover, &:active {
+    .icon {
+      fill: @color6;
+    }
+  }
+}
+
+.tc-button-header--flat {
+  color: @color2;
+  .icon {
+    fill: @color2;
+  }
+  &:hover {
+    color: @color2;
+    background-color: @color5;
+    .icon {
+      fill: @color2;
+    }
+  }
+  &:active {
+    color: @color2;
+    .icon {
+      fill: @color2;
+    }
+  }
+
+  &--left-bordered {
+    border-left-color: @color8 !important;
+  }
+}
+
+.tc-button-header--normal {
+  background-color: @color6;
+  color: @color1;
+  .icon {
+    fill: @color1;
+  }
+  &:hover {
+    background-color: @color7;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+    &:active {
+      background-color: @color10;
+      color: @color1;
+      .icon {
+        fill: @color1;
+      }
+    }
+  }
+  &:active {
+    background-color: @color10;
+    color: @color1;
+    .icon {
+      fill: @color1;
+    }
+  }
+}
+.btn-without-bg {
+  color: @color6;
+}

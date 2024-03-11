@@ -1,0 +1,94 @@
+.published-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  & .rfc-view-link {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+    font-family: Averta;
+    user-select: none;
+    outline: none;
+    background-color: #4655d2;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken(#4655d2, 10%);
+    }
+  }
+  & .congratulations {
+    width: 253px;
+    height: 40px;
+    font-family: Averta;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 20px;
+  }
+  & .description {
+    width: 380px;
+    height: 24px;
+    font-family: Averta;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 5px;
+  }
+  & .accentureto {
+    width: 385px;
+    height: 18px;
+    font-family: AvertaStd;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 20px;
+  }
+  & .hseparator {
+    width:100%;
+  }
+
+  & .rfc-done {
+    align-self: flex-end;
+    justify-self: self-end;
+  }
+
+  .copy-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+
+    .tc-button--normal {
+      width: 100px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .sc-input-wrapper {
+      flex: 1;
+    }
+
+    input.sc-input {
+      flex: 1;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin: 0;
+    }
+  }
+}

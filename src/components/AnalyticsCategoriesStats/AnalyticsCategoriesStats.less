@@ -1,0 +1,121 @@
+.sc-analytics-info {
+  width: 100%;
+  background: none;
+  position: relative;
+
+  th {
+    text-transform: uppercase;
+    font-size: 12px;
+
+    span {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  td,
+  th {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+
+    &:first-child {
+      width: 50%;
+      text-align: left;
+    }
+  }
+
+  td {
+    height: 40px;
+
+    &:first-child {
+      font-weight: 700;
+      max-width: 35vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      span {
+        font-weight: 300;
+      }
+    }
+
+    div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+
+    span {
+      color: #bbb;
+      display: block;
+    }
+  }
+
+  .sc-analytics-loading {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      animation: blick 3s infinite linear both;
+      opacity: 0.3;
+    }
+  }
+
+  .sc-sort-indicator {
+    position: absolute;
+    top: 25%;
+    right: -15px;
+
+    &.asc {
+      &:before {
+        border-color: transparent transparent #4655d2 transparent;
+      }
+    }
+
+    &.desc {
+      &:after {
+        border-color: #4655d2 transparent transparent transparent;
+      }
+    }
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 5px 6px 5px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+    }
+  }
+
+  .sc-icon-arrow {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transform-origin: center;
+
+  }
+}

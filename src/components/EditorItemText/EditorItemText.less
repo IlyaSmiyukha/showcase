@@ -1,0 +1,200 @@
+@bgColor: #333;
+@borderColor: #595959;
+@color: #fff;
+@FooterTextColor: #d9d9d9;
+
+.showcase-edit-item {
+  border: 1px dashed;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  background-position: calc(100% - 5px) 5px;
+  background-repeat: no-repeat;
+  transition: background-color 0.1s;
+  overflow: hidden;
+  border-color: @borderColor;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+
+  a{
+    color: @color;
+    text-decoration: underline;
+  }
+
+  &.sc-with-caps {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: rgba(@bgColor, .8);
+  }
+
+  &.categoty-title {
+    background-color: transparent;
+  }
+
+  &.footer-text {
+    color: @FooterTextColor;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &.filters {
+    width: 306px;
+    margin: 30px 0 30px calc(100% - 320px);
+  }
+
+  &.filters,
+  &.header-link {
+    padding: 10px 64px 10px 10px;
+  }
+
+  &.header-heading {
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 0.4px;
+    padding: 20px 10px;
+  }
+
+  &.header-description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.44;
+    letter-spacing: 0.2px;
+    font-family: 'Averta-Light';
+  }
+
+  &.header-description,
+  &.header-heading {
+    max-width: 630px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold !important;
+    }
+  }
+
+  &.button {
+    max-width: 350px;
+    min-height: 48px;
+    line-height: 48px;
+    padding: 0 10px;
+
+    @media (min-width: 768px) {
+      > span {
+        margin-left: -10px;
+      }
+    }
+
+    > span {
+      display: flex;
+      margin-left: -30px;
+      width: calc(100% + 30px);
+      line-height: 1;
+      align-items: center;
+    }
+  }
+
+  &.categoty-title {
+    border: none;
+    padding: 0 30px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  &.footer-text {
+    min-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    overflow: hidden;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .edit-icon,
+  .trash-icon {
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+
+    & > svg {
+      fill: #999;
+    }
+  }
+
+  .trash-icon {
+    right: 25px;
+  }
+
+  .inner-button {
+    height: 50px;
+    line-height: 50px;
+    min-width: 100px;
+    text-align: center;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    overflow: hidden;
+    background: #4655d2;
+    margin-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 20px;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  .sc-item-resize {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' %3E%3Cpath fill='#999' d='M96 32H32C14.33 32 0 46.33 0 64v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zm0 160H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm0 160H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zM288 32h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zm0 160h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm0 160h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z' class=''%3E%3C/path%3E%3C/svg%3E");
+    width: 8px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: col-resize;
+    z-index: 1
+  }
+
+  .sc-click-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+    
+  }
+
+
+}

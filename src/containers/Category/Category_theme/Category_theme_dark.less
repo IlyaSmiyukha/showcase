@@ -1,0 +1,25 @@
+@textColor: #fff;
+@draggingBg: #404040;
+
+
+.showcase-item-content {
+  h3 {
+    color: @textColor
+  }
+
+  .category-header {
+    .sc-dropdown {
+      .sc-dropdown-title.dots {
+        svg {
+          fill: @textColor
+        }
+      }
+    }
+  }
+
+  .items-list {
+    &.isdrag-here {
+      background: @draggingBg
+    }
+  }
+}

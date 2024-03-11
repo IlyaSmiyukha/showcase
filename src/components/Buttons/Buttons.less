@@ -1,0 +1,58 @@
+// Utility classes
+@import "~@/components/Buttons/Buttons_mixins";
+
+.tc-button--normal{
+  .tc-button--normal();
+
+  &.field-btn{
+    width: 60px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.tc-button--flat {
+  .tc-button--flat();
+
+  .inline-text {
+    margin: auto 10px;
+  }
+}
+
+.tc-button--light{
+  .tc-button--light();
+}
+
+.tc-button--light {
+  font-weight: thin;
+}
+
+.tc-button-icon--light{
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.tc-button-header--normal,
+.tc-button-header--flat {
+  .tc-common-btn();
+  border-radius: initial;
+  width: 50px;
+  height: 49px; //for border
+
+  &--left-bordered {
+    border-left-width: 1px;
+    border-left-style: solid;
+  }
+}
+
+.btn-without-bg {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  padding: 0;
+  text-decoration: underline;
+}

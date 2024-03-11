@@ -1,0 +1,21 @@
+@fontColor:  #808080;
+@lightColor: #fff;
+
+.sc-dropdown {
+  &-title {
+    color: @fontColor;
+    &:hover {
+      color: @lightColor;
+    }
+  }
+
+   &.open {
+     .sc-dropdown-title {
+       color: @lightColor;
+     }
+   }
+   &-menu {
+    background-color: #fff;
+    color: #4d4d4d;
+  }
+}

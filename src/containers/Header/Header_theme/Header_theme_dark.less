@@ -1,0 +1,33 @@
+@fontColor: #a6a6a6;
+@borderColor: #383838;
+@darkColor: #1a1a1a;
+
+.showcase-header {
+  color: @fontColor;
+  border-bottom-color: @borderColor;
+  & .showcase-count {
+    background-color: @fontColor;
+    color: @darkColor;
+  }
+  & .showcase-list-title {
+    color: @fontColor;
+  }
+
+  .sc-dropdown {
+    .dots {
+      border-left-color: @borderColor;
+      svg {
+        fill: @fontColor
+      }
+    }
+  }
+
+  .sc-add-user {
+    border-left-color: @borderColor;
+    svg {
+      path {
+        fill: @fontColor
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.sc-editor-table {
+  width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: solid 1px;
+  }
+
+  th {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 5px;
+
+    &:first-child {
+      width: 60%;
+    }
+
+    &:nth-child(3) {
+      width: 20%;
+    }
+  }
+
+  td {
+    padding: 5px 0;
+    vertical-align: middle;
+
+    &:nth-child(2) {
+      text-transform: capitalize;
+    }
+  }
+
+  td,
+  th {
+    text-align: left;
+
+    &:last-child {
+      text-align: center;
+    }
+  }
+
+  .sc-name {
+    font-size: 15px;
+  }
+
+  span {
+    display: block;
+  }
+
+  .sc-delete-button {
+    display: inline-flex;
+    align-items: center;
+    z-index: 2;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

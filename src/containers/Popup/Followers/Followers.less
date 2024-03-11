@@ -1,0 +1,113 @@
+.sc-followers-modal {
+    min-height: 300px;
+
+    p {
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+
+    .sc-no-followers {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sc-followers-list {
+    .sc-followers-list-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid ;
+        div {
+            font-size: 12px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            min-width: 35%;
+            width: 35%;
+            &:last-child {
+                min-width: 30%;
+                width: 30%;
+            }
+            + div {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .sc-followers {
+        min-height: 250px;
+        max-height: 60vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .sc-follower-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            div {
+                min-width: 35%;
+                width: 35%;
+                &:last-child {
+                    min-width: 30%;
+                    width: 30%;
+                }
+                height: 50px;
+                line-height: 50px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                + div {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.sc-pagination {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid;
+    padding: 20px 0 10px;
+    margin-top: 10px;
+
+    .sc-page-btn {
+        border: none;
+        background-color: #595959;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 6px;
+        text-align: center;
+        padding: 0;
+        cursor: pointer;
+        transition: background-color .1s;
+
+        &.active {
+            background-color: #4655d2;
+            pointer-events: none;
+            cursor: default;
+            &:hover {
+                background-color: #4655d2;
+            }
+        }
+
+        &:hover {
+            background-color: #4d4d4d;
+        }
+
+        + .sc-page-btn {
+            margin-left: 5px;
+        }
+    }
+}

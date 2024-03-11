@@ -1,0 +1,146 @@
+
+.sc-input-wrapper {
+  position: relative;
+
+  + .sc-input-wrapper,
+  + .sc-input-label  {
+    margin-top: 10px;
+  }
+
+  &-select {
+    position: relative;
+
+    .arrow-icon {
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      width: 11px;
+      height: 6px;
+      fill: #4d4d4d;
+    }
+  }
+
+  .sc-characters-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+  }
+}
+
+div.sc-input {
+  font-family: 'Gotham';
+  font-size: 14px;
+  outline: none;
+}
+
+select.sc-input {
+  height: 30px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.sc-input {
+  width: 100%;
+  min-height: 30px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0 8px;
+  font-family: 'Gotham';
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-size: 14px;
+  vertical-align: middle;
+  outline: none;
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &-static {
+    color: gray;
+  }
+
+  &-dynamic {
+    color: white;
+    min-width: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    padding: 0;
+  }
+
+  &::placeholder {
+    font-family: 'Gotham';
+    font-weight: 100;
+    color: #999999;
+    font-size: 15px;
+    font-family: 'Gotham';
+  }
+
+  &-wrapper {
+    & > span {
+      font-family: Averta;
+      font-size: 15px;
+      font-weight: bold;
+      color: #a6a6a6;
+      margin-right: 10px;
+    }
+  }
+
+  &-label {
+    font-weight: bold;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-color: transparent;
+    font-size: 15px;
+    font-family: Averta;
+    color: #a6a6a6;
+    margin: 0 0 5px;
+  }
+
+  &-description {
+    width: 620px;
+    height: 16px;
+    font-family: 'Gotham';
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: normal;
+    margin: 5px 0 0;
+  }
+}
+
+.sc-textarea {
+  font-family: 'Gotham';
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+
+  &::placeholder {
+    font-family: 'Gotham';
+    font-weight: 100;
+    color: #999999;
+    font-size: 15px;
+    font-family: 'Gotham';
+  }
+}
+
+input[type='search'] {
+  appearance: none;
+}
+
+.sc-input-static {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

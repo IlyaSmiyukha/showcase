@@ -1,0 +1,52 @@
+
+.tc-common-btn() {
+  border-radius: 4px;
+  border: none;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  font-family: 'Averta';
+  user-select: none;
+  outline: none;
+
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+  }
+
+  svg.svg {
+    width: 17px;
+    height: 17px;
+  }
+  &.has-left-icon {
+    padding-left: 37px;
+    svg.svg {
+      left: 11px;
+      top: 6px;
+    }
+  }
+  &.has-right-icon {
+    padding-right: 37px;
+    svg.svg {
+      right: 11px;
+      top: 6px;
+    }
+  }
+}
+
+.tc-button--normal {
+  .tc-common-btn();
+}
+
+.tc-button--flat(){
+  .tc-common-btn();
+}
+
+.tc-button--light(){
+  .tc-common-btn();
+}

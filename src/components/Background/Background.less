@@ -1,0 +1,59 @@
+@color: #333;
+@colorLink: #4655d2;
+
+.sc-background-container {
+  color: @color;
+
+  svg {
+    fill: @color;
+  }
+
+  .sc-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+
+    &:before {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+    &:after {
+      position: absolute;
+      content: "";
+      height: 57.14%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(180deg,#1a1a1a00,#1a1a1a 63%,#1a1a1a 88%);
+    }
+  }
+
+  span {
+    max-width: 340px;
+  }
+
+  svg {
+    width: 100px;
+    margin-bottom: -30px;
+  }
+
+  .sc-loader {
+    transform: scale(.5)
+  }
+}
